@@ -1,0 +1,64 @@
+Ctrl＋Dで複数選択
+【Youtubeチャンネルいまにゅプログラミング塾】https://www.youtube.com/watch?v=zp-kAt1Ih5k
+
+StreamlitはGitHubでログインした
+
+
+C直下にStreamlit_projectディレクトリを切り仮想環境名env_streamlit を作成しVSCODEで実装する
+
+仮想環境作成
+ python -m venv env_streamlit
+ 
+仮想環境アクティベート
+ 仮想環境名\Scripts\activate
+
+Streamlitを起動 ブラウザでサイト表示される
+  streamlit hello
+
+サイト表示の停止
+ Ctrl + C
+
+main.pyを作成後
+ストリームの実行
+ streamlit run main.py
+
+タイトル付ける
+ st.title('Streamlit 超入門')
+
+本文書く
+ st.write('内容')
+ 
+表を表示　方法１
+df = pd.DataFrame({
+    '1列目': [1, 2, 3, 4],
+    '2列目': [10, 20, 30, 40]
+})
+
+st.write(df)
+
+表を表示　方法２
+st.write(df)の代わりに
+st.dataframe(df)
+st.dataframe(df, width=80000, height=100000)
+st.dataframe(df.style.highlight_max(axis=0), width=80000, height=100000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
